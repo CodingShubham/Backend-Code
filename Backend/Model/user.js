@@ -1,5 +1,4 @@
 const mongoose=require("mongoose");
-
 const UserSchema= new mongoose.Schema({
 
 
@@ -20,6 +19,8 @@ const UserSchema= new mongoose.Schema({
     emailId:{
         type:String,
          required:true,
+       
+
         
     },
 

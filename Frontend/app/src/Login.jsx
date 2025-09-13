@@ -39,30 +39,49 @@ if (!email || !password) {
 
   return (
     <div className="flex justify-center mt-20">
-      <div className="h-60 w-80 flex justify-center border rounded-lg text-xl items-center">
+      <div className="h-[300px] w-80 flex justify-center border rounded-lg text-xl items-center">
         <form onSubmit={handleClick} className="flex flex-col">
           <input
             onChange={(e) => setEmail(e.target.value)}
             value={email}
-            className="border rounded-lg text-center"
+            className=" bg-black rounded-lg text-center text-white text-md focus:outline-none"
             placeholder="Email"
+            type='email'
           />
 
           <input
             onChange={(e) => setPassword(e.target.value)}
             value={password}
-            className="mt-6 border rounded-lg text-center"
+            className="mt-6   bg-black rounded-lg text-center text-white text-md focus:outline-none "
             placeholder="Password"
             required
+            type="password"
           />
+
+
+          <div className='space-x-20'>
 
           <button
             type="submit"
-            className="mt-10 border rounded-md p-3 bg-white"
+            className="  w-[65px] mt-10 border rounded-md p-1 bg-white"
             required
           >
             Login
           </button>
+
+
+            <button
+            type="submit"
+            className="  w-[90px] mt-10 border rounded-md p-1 bg-white"
+            required
+          >
+            Sign Up
+          </button>
+
+
+          </div>
+
+          
         </form>
       </div>
     </div>
